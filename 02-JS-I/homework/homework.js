@@ -185,8 +185,7 @@ function esPositivo(numero) {
   
   if (numero >= 0) {
     return "Es positivo";
-  } 
-  else {
+  } else {
     return "Es negativo";
   }
 
