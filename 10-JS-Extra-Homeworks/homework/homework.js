@@ -78,7 +78,7 @@ function asAmirror(str) {
     if (elemento === " ") {
       palabra.push(" ");
     } else {
-      for (let i = )
+      
     }
   })
 
