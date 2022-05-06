@@ -143,7 +143,21 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
 
-  
+//   let intersección = [];
+
+//   arreglo1.forEach(function (elemento){
+//     if (arreglo2.includes(elemento)) {
+//       intersección.push(elemento);
+//     }
+//   })
+// return intersección;
+
+//   let interseccion = arreglo1.filter(function (elemento){
+//     return arreglo1.includes(elemento) && arreglo2.includes(elemento);
+//   })
+// return interseccion;
+
+  return arreglo1.filter(elemento => arreglo2.includes(elemento));
 
 }
 
