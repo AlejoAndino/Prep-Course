@@ -129,7 +129,9 @@ function sortArray(arr) {
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
 
-
+  return arr.sort(function (a, b) {
+    return a.length - b.length;
+  })
 
 }
 
@@ -141,7 +143,7 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
 
-
+  
 
 }
 
