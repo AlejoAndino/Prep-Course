@@ -71,12 +71,15 @@ function asAmirror(str) {
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
 
-  let arrayStr = [];
+//   let arrayStr = [];
 
-  for (let i = 0; i < str.length; i++) {
-    arrayStr.unshift(str[i]);
-  }
-return arrayStr.join("").split(" ").reverse().join(" ");
+//   for (let i = 0; i < str.length; i++) {
+//     arrayStr.unshift(str[i]);
+//   }
+// return arrayStr.join("").split(" ").reverse().join(" ");
+
+  return str.split("").reverse().join("").split(" ").reverse().join(" ");
+
 } 
 
 
