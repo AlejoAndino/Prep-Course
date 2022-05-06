@@ -71,17 +71,12 @@ function asAmirror(str) {
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
 
-  let arrayStr = str.split(" ");
-  let palabra = [];
+  let arrayStr = [];
 
-  arrayStr.forEach(function (elemento) {
-    if (elemento === " ") {
-      palabra.push(" ");
-    } else {
-      
-    }
-  })
-
+  for (let i = 0; i < str.length; i++) {
+    arrayStr.unshift(str[i]);
+  }
+return arrayStr.join("").split(" ").reverse().join(" ");
 } 
 
 
@@ -90,6 +85,16 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+
+  let numReverse = numero.toString().split("").reverse().join("");
+  let numString = numero.toString();
+
+  if (numReverse === numString) {
+    return "Es capicua";
+  } else {
+    return "No es capicua";
+  }
+
 }
 
 
@@ -97,6 +102,25 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+
+  let arrayCadena = cadena.split("");
+  let stringSinABC = "";
+
+  for (let i = 0; i < arrayCadena.length; i++) {
+    if (arrayCadena[i] === "a" || arrayCadena[i] === "b" || arrayCadena[i] === "c") {
+      continue;
+    } else {
+      stringSinABC += arrayCadena[i];
+    }
+  }
+return stringSinABC;
+
+//   let arrayCadena = cadena.split("");
+
+//   let nuevoArray = arrayCadena.filter(function (elemento) {
+//     return elemento !== "b";
+//   })
+// return nuevoArray;
 }
 
 
@@ -104,6 +128,9 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+
+
+
 }
 
 
@@ -113,6 +140,9 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+
+
+
 }
 
 
